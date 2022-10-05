@@ -1,0 +1,14 @@
+def Input_data_file(file_name, any_strings, attribute):
+    data = open(file_name, attribute)
+    data.writelines(any_strings)
+    data.close()
+
+
+def Output_data_file(file_name, attribute):
+    data = open(file_name, attribute)
+    data_list = []
+    for line in data:
+        a = line.rstrip(line[-1])
+        data_list.append((a))
+    data.close()
+    return data_list

@@ -1,15 +1,12 @@
 # Вычислить число c заданной точностью d
 #  Пример: - при $d = 0.001, π = 3.141.$    $10^{-1} ≤ d ≤10^{-10}$
 
-user_input = float(input(f'Введите любое вещественное число в диапазоне от: {10**(-1)} до {10**(-10)} '))
-accuracy = int(input('Введите округление: '))
-if (user_input >= 10**(-10) and user_input <= 10**(-1)):
-    print(round(user_input, accuracy))
-else:
-    print(f'введенные данные {user_input} не верные')
+# задача решена с возможностью округления любой дробной части введенной пользователем
 
+user_input_accuracy = input(f'Введите любое число c количеством знаков после запятой:  ').split('.')
+user_input = float(input('Введите число для округления по примеру: '))
 
+accuracy = len([int(x) for x in list(user_input_accuracy[1])]) 
 
-
-
-
+print (f'количественное округление по знакам $d: {accuracy}')
+print (f'Округленное число -> {round(user_input, accuracy)}')

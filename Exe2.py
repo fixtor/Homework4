@@ -11,8 +11,4 @@ while(div <= number):
     else:
         div += 1 
 print (new_list)
-        
-
-        
-
 

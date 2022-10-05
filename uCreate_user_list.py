@@ -15,15 +15,3 @@ def Any_range_list():
     n2 = int(input('Введите конечно значение:'))
     any_range_list = list(range(n1,n2))
     return any_range_list
-
-# def Find_double()
-#
-#     new_list = Int_list_create()
-#     new_list1 = []
-#
-#     for x in new_list:
-#         if new_list.count(x) == 1: # если повторение больше или равно 1
-#             new_list1.append(x)
-#
-#     return new_list, new_list1
-

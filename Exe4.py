@@ -11,7 +11,6 @@ print(coefficient_a, coefficient_b, coefficient_c)
 
 result = ''
 
-
 if coefficient_b == 0:
     result = f"{coefficient_a}*x^{k} + {coefficient_c}*x^{k-2} = 0"
 
